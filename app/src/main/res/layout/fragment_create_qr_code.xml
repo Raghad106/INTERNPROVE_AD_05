@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CreateQrCodeFragment"
+    android:padding="8dp"
+    >
+
+    <EditText
+        android:id="@+id/ETEnterYourLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/design_with_stroke"
+        android:padding="12dp"
+        android:hint="@string/link_address_et"
+        app:layout_constraintBottom_toTopOf="@id/BTGenerateQRCode"
+        />
+
+    <Button
+        android:id="@+id/BTGenerateQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ETEnterYourLink"
+        app:layout_constraintStart_toStartOf="@+id/ETEnterYourLink"
+        app:layout_constraintTop_toBottomOf="@+id/ETEnterYourLink"
+        android:layout_marginTop="8dp"
+        android:text="@string/generate_link_bt"
+        app:layout_constraintBottom_toTopOf="@id/IVQRGenerated"
+        />
+
+    <ImageView
+        android:id="@+id/IVQRGenerated"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/design_with_stroke"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ETEnterYourLink"
+        app:layout_constraintStart_toStartOf="@+id/ETEnterYourLink"
+        app:layout_constraintTop_toBottomOf="@+id/BTGenerateQRCode"
+        app:layout_constraintBottom_toTopOf="@id/BTSaveToMyPhone"
+        />
+
+    <Button
+        android:id="@+id/BTSaveToMyPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_Photo_to_phone_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ETEnterYourLink"
+        app:layout_constraintTop_toBottomOf="@+id/IVQRGenerated" />
+</androidx.constraintlayout.widget.ConstraintLayout>

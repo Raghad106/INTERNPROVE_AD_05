@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ScanQrCodeFragment"
+    android:padding="8dp"
+    android:paddingTop="4dp"
+    >
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcodeScanner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/BTScanQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/scan_QR_code"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeScanner"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/TVQRCodeAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/design_with_stroke"
+        android:maxLines="2"
+        android:padding="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/your_QR_code_Address"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/BTSaveQRCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTScanQRCode"
+        />
+
+    <Button
+        android:id="@+id/BTSaveQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_QR_code"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETNameQRCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVQRCodeAddress"
+        />
+
+    <EditText
+        android:id="@+id/ETNameQRCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/TVQRCodeAddress"
+        app:layout_constraintStart_toStartOf="@+id/TVQRCodeAddress"
+        app:layout_constraintTop_toBottomOf="@+id/TVQRCodeAddress"
+        android:background="@drawable/design_with_stroke"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="@string/name_of_QR_code_et"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVHistoryItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETNameQRCode"
+        android:layout_marginTop="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

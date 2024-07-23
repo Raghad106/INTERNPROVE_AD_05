@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_margin="12dp"
+    android:background="@drawable/design_with_stroke">
+   <TextView
+       android:id="@+id/TVCodeName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:text="@string/name_of_QR_code_tv"
+       android:textSize="18sp"
+    />
+
+    <TextView
+        android:id="@+id/TVCodeAddressLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/TVCodeAddressLink"
+        app:layout_constraintTop_toBottomOf="@id/TVCodeName"
+        android:text="@string/your_QR_code_Address"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/IVCancelIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/IVCopyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_copy"
+        app:layout_constraintEnd_toStartOf="@+id/IVCancelIcon"
+        app:layout_constraintTop_toTopOf="@+id/IVCancelIcon"
+        android:padding="4dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/IVShareIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_share"
+        app:layout_constraintEnd_toStartOf="@+id/IVCopyIcon"
+        app:layout_constraintTop_toTopOf="@+id/IVCancelIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

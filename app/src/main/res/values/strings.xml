@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QR Code scanner App</string>
+    <string name="scan_QR_code">Scan QR Code</string>
+    <string name="save_QR_code">Save</string>
+    <string name="create_QR_code">Create QR Code</string>
+    <string name="name_of_QR_code_et">Enter Your QR Code Name</string>
+    <string name="link_address_et">Enter Your Link</string>
+    <string name="name_of_QR_code_tv">Your QR Code Name</string>
+    <string name="your_QR_code_Address">Your QR Code</string>
+    <string name="generate_link_bt">Generate</string>
+    <string name="save_Photo_to_phone_bt">Save To Phone</string>
+    <string name="share_Photo_bt">Share Photo</string>
+</resources>
