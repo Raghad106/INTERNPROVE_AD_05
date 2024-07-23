@@ -23,24 +23,28 @@
         android:id="@+id/BTScanQRCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+
         android:text="@string/scan_QR_code"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barcodeScanner"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/design_with_stroke_buttons"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         />
 
     <TextView
         android:id="@+id/TVQRCodeAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/design_with_stroke"
         android:maxLines="2"
-        android:padding="8dp"
+        android:padding="10dp"
         android:layout_marginEnd="4dp"
         android:text="@string/your_QR_code_Address"
         android:textSize="14sp"
@@ -58,6 +62,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/ETNameQRCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TVQRCodeAddress"
+        android:background="@drawable/design_with_stroke_buttons"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         />
 
     <EditText

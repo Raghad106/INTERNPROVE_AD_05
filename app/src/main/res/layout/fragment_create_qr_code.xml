@@ -31,6 +31,10 @@
         android:layout_marginTop="8dp"
         android:text="@string/generate_link_bt"
         app:layout_constraintBottom_toTopOf="@id/IVQRGenerated"
+        android:background="@drawable/design_with_stroke_buttons"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         />
 
     <ImageView
@@ -54,5 +58,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ETEnterYourLink"
-        app:layout_constraintTop_toBottomOf="@+id/IVQRGenerated" />
+        app:layout_constraintTop_toBottomOf="@+id/IVQRGenerated"
+        android:background="@drawable/design_with_stroke_buttons"
+        android:padding="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
